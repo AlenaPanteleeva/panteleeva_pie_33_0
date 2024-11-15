@@ -1,0 +1,343 @@
+.cormorant-unicase-light {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .cormorant-unicase-bold {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .comfortaa-700 {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.comfortaa-300 {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  header {
+    display: flex;
+    background-color: black;
+    padding: 20px 10px; /* Устанавливаем отступы внутри шапки */
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+  
+  header a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    border-radius: 4px;
+  }
+  
+  header a.logo {
+    font-size: 45px; /* Увеличиваем размер шрифта */
+    font-weight: bold;
+    
+  }
+  
+  header a:hover {
+    background-color: #04AA6D;
+    color: #212121;
+  }
+
+  header a.logo:hover {
+    background-color: transparent; /* Убираем зеленый фон при наведении */
+    color: white; /* Оставляем белый цвет текста */
+  }
+  
+  header a.active {
+    background-color: #04AA6D;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  body, html {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 1190px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+    }
+    
+  @keyframes headerLane1 {
+        0% {
+            background-image: url('image/1.png');
+        }
+        33% {
+            background-image: url('image/1.png');
+        }
+        34% {
+            background-image: url('image/2.png');
+        }
+        67% {
+            background-image: url('image/2.png');
+        }
+        68% {
+            background-image: url('image/3.png');
+        }
+        100% {
+            background-image: url('image/3.png');
+        }
+      }
+
+  @keyframes headerLane2 {
+    0% {
+        background-image: url('image/4.png');
+    }
+    33% {
+        background-image: url('image/4.png');
+    }
+    34% {
+        background-image: url('image/5.png');
+    }
+    67% {
+        background-image: url('image/5.png');
+    }
+    68% {
+        background-image: url('image/6.png');
+    }
+    100% {
+        background-image: url('image/6.png');
+    }
+}
+@keyframes headerLane3 {
+  0% {
+      background-image: url('image/7.png');
+  }
+  33% {
+      background-image: url('image/7.png');
+  }
+  34% {
+      background-image: url('image/8.png');
+  }
+  67% {
+      background-image: url('image/8.png');
+  }
+  68% {
+      background-image: url('image/9.png');
+  }
+  100% {
+      background-image: url('image/9.png');
+  }
+}
+  
+body {
+  margin: 0; /* Убираем отступы по краям страницы */
+  height: 100vh; /* Устанавливаем высоту на 100% видимой области экрана */
+  background-color: aliceblue;
+
+}
+
+.bulletsContainer {
+display: flex; /* Используем Flexbox для выстраивания блоков в строку */
+justify-content: space-between; /* Распределяем пространство между блоками */
+align-items: flex-start; /* Выравниваем блоки по верхнему краю */
+margin: 20px auto; /* Устанавливаем верхний и нижний отступы в 20px и авто по бокам для центрирования */
+}
+
+.bulletsBlock {
+    width: 100%; /* Задаем ширину блоков (можно изменить по необходимости) */
+    margin: 0px; /* Отступы между блоками */
+    flex: 1; /* Позволяем блокам занимать равное пространство */
+}
+
+
+
+.animatedIcon {
+  width: 100%; /* Ширина 100% от контейнера */
+  height: 100%; /* Устанавливаем высоту анимации на 100% */
+  animation: headerLane1 7s infinite; /* Применяем анимацию */
+  background-size: cover; /* Изображение растягивается на весь элемент */
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  position: absolute; /* Абсолютное позиционирование для иконки */
+  top: 0;
+  left: 0;
+}
+.animatedIcon2 {
+  width: 100%; /* Ширина 100% от контейнера */
+  height: 100%; /* Устанавливаем высоту анимации на 100% */
+  animation: headerLane2 7s infinite; /* Применяем анимацию */
+  background-size: cover; /* Изображение растягивается на весь элемент */
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  position: absolute; /* Абсолютное позиционирование для иконки */
+  top: 0;
+  left: 0;
+}
+.animatedIcon3 {
+  width: 100%; /* Ширина 100% от контейнера */
+  height: 100%; /* Устанавливаем высоту анимации на 100% */
+  animation: headerLane3 7s infinite; /* Применяем анимацию */
+  background-size: cover; /* Изображение растягивается на весь элемент */
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  position: absolute; /* Абсолютное позиционирование для иконки */
+  top: 0;
+  left: 0;
+}
+
+.titleBullet, .hideText {
+  position: relative; /* Установим относительное позиционирование для текста */
+  color: white; /* Цвет текста */
+  z-index: 1; /* Повышаем z-index, чтобы текст был выше анимации */
+}
+
+.titleBullet {
+  margin: 0;
+  font-size: 1.5em; /* Размер шрифта для заголовка */
+}
+
+.hideText {
+  margin: 0;
+  font-size: 1.25em; /* Размер шрифта для скрытого текста */
+}
+
+.bulletsBlock:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bulletsBlock > div {
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.35s linear;
+  transition: all 0.35s linear;
+}
+
+/*Тень снизу у блока при наведении*/
+.bulletsBlock > div:hover {
+  -webkit-box-shadow: 0 35px 35px -35px #000000;
+  -moz-box-shadow: 0 35px 35px -35px #000000;
+  box-shadow: 0 35px 35px -35px #000000;
+}
+
+.titleBullet, .hideText {
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.titleBullet {
+  line-height: 1.0em;
+  font-size: 2.1875em;
+  background: black;
+  z-index: 10;
+}
+
+/*Анимация при наведении видимого текстового блока*/
+.bulletsBlock > div:hover p.titleBullet {
+  bottom: auto;
+}
+
+.hideText {
+  background: #04AA6D; /* Цвет фона */
+  font-weight: 300; /* Стиль шрифта */
+  z-index: 11; /* Уровень наложения */
+  opacity: 0; /* Начальное значение для прозрачности */
+  visibility: hidden; /* Скрываем элемент */
+  max-height: 0;
+  overflow-y: auto;
+  transition: all .3s ease-in-out; /* Плавный переход для видимости */
+  width: 100%; /* Ширина 100% от родителя */
+}
+
+.bullet-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
+  position: relative; /* Установим относительное позиционирование для контейнера */
+  background: rgba(0, 0, 0, 0.3); /* Фон для блока */
+  border-radius: 10px; /* Закруглённые углы для блока */
+  overflow: hidden; /* Отключаем выходящие за границы элементы */
+  text-align: center; /* Центрируем текст */
+  flex-grow: 1; /* Позволяет блоку занимать доступное пространство */
+  min-height: 400px; /* Минимальная высота блока для сохранения структуры */
+}
+
+/* Анимация появления текста при наведении на заголовок */
+.bullet-item:hover .hideText {
+  padding: 10px; /* Отступы сверху и снизу */
+  opacity: 1; /* Полная непрозрачность при наведении */
+  visibility: visible; /* Показать текст */
+  max-height: 200px;
+}
+
+/* Стили для футера */
+.footer {
+  background-color: black; /* Темный фон, аналогичный bg-dark */
+  color: #f8f9fa; /* Светлый цвет текста */
+  padding: 1rem 0; /* Отступы сверху и снизу */
+  text-align: left; /* Центрируем текст */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Стили для контейнера внутри футера */
+.footer .container {
+  max-width: 1200px; /* Ограничим максимальную ширину */
+  margin: 0 auto; /* Центрируем контейнер */
+  padding: 0 15px; /* Отступы по бокам */
+}
+
+/* Стили для текста автора */
+.author {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #fff; /
+}
+
+/* Стили для ссылки */
+.email-link {
+  color: #ffff; 
+  text-decoration: none; /* Убираем подчеркивание */
+  font-weight: bold;
+}
+
+.email-link:hover {
+  color: #04AA6D; /* Цвет текста при наведении */
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Опционально, чтобы обеспечить стили для адаптивности */
+@media (max-width: 767px) {
+  .footer {
+    padding: 1rem 0.5rem; /* Уменьшаем отступы на мобильных */
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,335 @@
+.cormorant-unicase-light {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .cormorant-unicase-bold {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .comfortaa-700 {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.comfortaa-300 {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  header {
+    display: flex;
+    background-color: black;
+    padding: 20px 10px; /* Устанавливаем отступы внутри шапки */
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+  
+  header a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    border-radius: 4px;
+  }
+  
+  header a.logo {
+    font-size: 45px; /* Увеличиваем размер шрифта */
+    font-weight: bold;
+    
+  }
+  
+  header a:hover {
+    background-color: #04AA6D;
+    color: #212121;
+  }
+
+  header a.logo:hover {
+    background-color: transparent; /* Убираем зеленый фон при наведении */
+    color: white; /* Оставляем белый цвет текста */
+  }
+  
+  header a.active {
+    background-color: #04AA6D;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    header a.logo {
+      font-size: 40px;
+    }
+    header a {
+      font-size: 16px;
+    }
+  }
+
+  body {
+    margin: 0; /* Убираем отступы по краям страницы */
+    height: 100vh; /* Устанавливаем высоту на 100% видимой области экрана */
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column; /* Элементы расположены по вертикали */
+  
+  }
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  main {
+    flex-grow: 1; /* Основной контент растягивается, занимая все пространство */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h4 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Стили для формы */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили для всех полей ввода */
+  input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #04AA6D;
+    outline: none;
+  }
+  
+  /* Стили для меток (label) */
+  label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Стили для кнопки */
+  button[type="button"] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #038f58;
+  }
+  
+  /* Стили для отображения результата */
+  #resultContainer {
+    display: none;
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  /* Мобильная версия */
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+    
+    h4 {
+      font-size: 1em;
+    }
+  
+    button[type="button"] {
+      width: 100%;
+    }
+  }
+
+  
+/* Стили для футера */
+.footer {
+    background-color: black; /* Темный фон, аналогичный bg-dark */
+    color: #f8f9fa; /* Светлый цвет текста */
+    padding: 1rem 0; /* Отступы сверху и снизу */
+    text-align: left; /* Центрируем текст */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Стили для контейнера внутри футера */
+  .footer .container {
+    max-width: 1200px; /* Ограничим максимальную ширину */
+    margin: 0 auto; /* Центрируем контейнер */
+    padding: 0 15px; /* Отступы по бокам */
+  }
+  
+  /* Стили для текста автора */
+  .author {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: #fff; 
+  }
+  
+  /* Стили для ссылки */
+  .email-link {
+    color: #ffff; 
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold;
+  }
+  
+  .email-link:hover {
+    color: #04AA6D; /* Цвет текста при наведении */
+    text-decoration: underline; /* Подчеркивание при наведении */
+  }
+  
+  /* Опционально, чтобы обеспечить стили для адаптивности */
+  @media (max-width: 767px) {
+    .footer {
+      padding: 1rem 0.5rem; /* Уменьшаем отступы на мобильных */
+    }
+  }
+/* Для устройств шириной до 1200px (планшеты в горизонтальной ориентации) */
+@media (max-width: 1200px) {
+    header {
+      padding: 15px 5px;
+    }
+    header a.logo {
+      font-size: 38px;
+    }
+    header a {
+      font-size: 16px;
+      padding: 10px;
+    }
+    .bulletsBlock {
+      flex-direction: column; /* Располагаем блоки в колонку */
+    }
+    .bullet-item {
+      min-height: 300px;
+    }
+  }
+  
+  /* Для устройств шириной до 992px (планшеты и большие смартфоны) */
+  @media (max-width: 992px) {
+    nav {
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .footer .container {
+      padding: 0 10px;
+    }
+    .bullet-item {
+      min-height: 250px;
+      font-size: 1rem; /* Уменьшаем размер шрифта */
+    }
+    .hideText {
+      font-size: 1rem;
+      max-height: 150px; /* Уменьшаем высоту скрытого текста */
+    }
+  }
+  
+  /* Для устройств шириной до 768px (планшеты в портретной ориентации) */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    header a {
+      font-size: 14px;
+      padding: 8px;
+    }
+    header a.logo {
+      font-size: 35px;
+    }
+    .bulletsBlock {
+      flex-direction: column;
+      margin: 10px 0;
+    }
+    .bullet-item {
+      min-height: 200px;
+    }
+  }
+  
+  /* Для устройств шириной до 576px (смартфоны) */
+  @media (max-width: 576px) {
+    header a {
+      font-size: 12px;
+    }
+    header a.logo {
+      font-size: 30px;
+    }
+    .footer {
+      text-align: center; /* Центрируем текст футера */
+    }
+    .footer .container {
+      padding: 0 5px;
+    }
+    .bulletsBlock {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .bullet-item {
+      min-height: 150px;
+      font-size: 0.9rem; /* Ещё уменьшаем текст */
+    }
+    .hideText {
+      font-size: 0.8rem;
+      max-height: 100px;
+    }
+  }
+  
+  /* Для устройств шириной до 360px (маленькие смартфоны) */
+  @media (max-width: 360px) {
+    header a.logo {
+      font-size: 25px;
+    }
+    header a {
+      font-size: 10px;
+    }
+    .bullet-item {
+      min-height: 120px;
+    }
+    .hideText {
+      font-size: 0.7rem;
+      max-height: 80px;
+    }
+  }
+  
