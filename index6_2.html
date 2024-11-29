@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="integers">
+  <meta name="description" content="Answers to laboratory">
+  <meta name="author" content="AlenaPanteleeva">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Лабораторная работа №6</title>
+</head>
+<body>
+
+<header>
+  <div>
+    <a class="cormorant-unicase-bold logo"> Лабораторная работа №6</a>
+  </div>
+    <nav>
+      <a class ="cormorant-unicase-bold active" href ="laboratornaya4.html">Главная</a>
+      <a class ="cormorant-unicase-bold" href="index6.html">Задание 1</a>
+    </nav>
+</header>
+<main>
+  <div class="container">
+    <h4 class="comfortaa-700">
+      Задание 2: Даны  целые  числа  K,  N  и  набор  из  N  целых  чисел.  Если  в  наборе имеются числа, меньшие K, то вывести эти числа.
+    </h4>
+  
+    <form id="formTask1">
+      <div>
+        <label for="arrayLength" class="comfortaa-700">Введите длину массива:</label>
+        <input type="number" class="input comfortaa-700" id="arrayLength" >
+      </div>
+
+      <div>
+        <label for="arrayElements" class="comfortaa-700">Введи элементы массива через пробел:</label>
+        <input type="text" class="input comfortaa-700" id="arrayElements"  >
+      </div>
+  
+      <div>
+        <label for="numberK" class="comfortaa-700">Введите число К:</label>
+        <input type="number" class="input comfortaa-700" id="numberK">
+      </div>
+  
+      <button type="button" class="button comfortaa-700" onclick="processArray()">Проверить</button>
+  
+      <h3 id="resultContainer" class="comfortaa-700">авм</h3>
+    </form>
+  </div>
+</main>
+<script src="./src/lab6_2.js"></script>
+
+<footer class="footer">
+  <div class="container">
+    <span class="comfortaa-700 author">Автор: Алёна Пантелеева</span>
+    <p class="email">
+      <a class="email-link comfortaa-300">pantalena7773@gmail.com</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
