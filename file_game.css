@@ -1,0 +1,41 @@
+body {
+    margin: 0; /* Убираем стандартные отступы */
+    height: 100vh; /* Устанавливаем высоту на весь экран */
+}
+.game__text {
+    font-size: 1.2em;
+}
+.comfortaa-700 {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+.comfortaa-300 {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+.fullscreen-bg {
+    background-image: url('image/g1.png'); /* Путь к вашему изображению */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh; /* Фон должен занимать 100% высоты экрана */
+    width: 100%; /* Фон должен растягиваться на всю ширину */
+}
+.video-container {
+    width: 100%;          /* Видео будет растягиваться на всю ширину контейнера */
+    max-width: 500px;     /* Ограничим максимальную ширину, чтобы оно не становилось слишком большим */
+    height: auto;         /* Высота будет пропорциональна ширине */
+    overflow: hidden;     /* Обрежем все, что выходит за пределы контейнера */
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;          /* Видео будет растягиваться по ширине контейнера */
+    height: auto;         /* Высота сохраняет пропорции видео */
+    object-fit: contain;  /* Убедимся, что видео не выходит за пределы контейнера */
+}
+
