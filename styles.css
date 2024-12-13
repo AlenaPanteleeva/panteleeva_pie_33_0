@@ -1,0 +1,330 @@
+.cormorant-unicase-light {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .cormorant-unicase-bold {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .comfortaa-700 {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.comfortaa-300 {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  header {
+    display: flex;
+    background-color: black;
+    padding: 20px 10px; /* Устанавливаем отступы внутри шапки */
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+  
+  header a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    border-radius: 4px;
+  }
+  
+  header a.logo {
+    font-size: 45px; /* Увеличиваем размер шрифта */
+    font-weight: bold;
+    
+  }
+  
+  header a:hover {
+    background-color: #04AA6D;
+    color: #212121;
+  }
+
+  header a.logo:hover {
+    background-color: transparent; /* Убираем зеленый фон при наведении */
+    color: white; /* Оставляем белый цвет текста */
+  }
+  
+  header a.active {
+    background-color: #04AA6D;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  body {
+    margin: 0; /* Убираем отступы по краям страницы */
+    height: 100vh; /* Устанавливаем высоту на 100% видимой области экрана */
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column; /* Элементы расположены по вертикали */
+  
+  }
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  main {
+    flex-grow: 1; 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+  h4.comfortaa-700 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+   
+  }
+
+  h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Стили для формы */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили для всех полей ввода */
+  input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+
+  input[type="number"]:focus {
+    border-color: #04AA6D;
+    outline: none;
+  }
+  
+  /* Стили для меток (label) */
+  label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Стили для кнопки */
+  button[type="button"] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #038f58;
+  }
+  
+  /* Стили для отображения результата */
+  #resultContainer {
+    display: none;
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+
+  
+/* Стили для футера */
+.footer {
+    background-color: black; /* Темный фон, аналогичный bg-dark */
+    color: #f8f9fa; /* Светлый цвет текста */
+    padding: 1rem 0; /* Отступы сверху и снизу */
+    text-align: left; /* Центрируем текст */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Стили для контейнера внутри футера */
+  .footer .container {
+    max-width: 1200px; /* Ограничим максимальную ширину */
+    margin: 0 auto; /* Центрируем контейнер */
+    padding: 0 15px; /* Отступы по бокам */
+  }
+  
+  /* Стили для текста автора */
+  .author {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: #fff; 
+  }
+  
+  /* Стили для ссылки */
+  .email-link {
+    color: #ffff; 
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold;
+  }
+  
+  .email-link:hover {
+    color: #04AA6D; /* Цвет текста при наведении */
+    text-decoration: underline; /* Подчеркивание при наведении */
+  }
+  
+
+  @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header a.logo {
+        font-size: 35px;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 90%;
+        align-items: flex-start;
+    }
+
+    nav a {
+        display: block;
+        width: 50%;
+        text-align: left;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    /* Стили для контейнера и формы */
+    .container {
+        padding: 0 10px;
+    }
+    h4.comfortaa-700 {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      word-wrap: break-word;  
+  }
+
+    form input {
+        font-size: 1rem;
+    }
+
+    .comfortaa-700 {
+        font-size: 1.3rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .author {
+        font-size: 1rem;
+    }
+
+    .email-link {
+        font-size: 1.2rem;
+    }
+    .category-button {
+      font-size: 16px;  
+      padding: 10px;  
+      min-width: 100px; 
+  }
+
+}
+
+
+
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Центрируем карточки по горизонтали */
+    align-items: center; /* Центрируем карточки по вертикали */
+    padding: 10px; /* Добавим отступы для контейнера */
+}
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.product-card img {
+    max-width: 100%; 
+    height: auto;
+}
+.product-card h2 {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 700; 
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: black;
+}
+
+.product-card p {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 300; 
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #555;
+}
+#categories-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.category-button {
+  background-color: #04AA6D;
+  font-family: "Cormorant Unicase", serif;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.category-button:hover {
+  background-color: black;
+}
+
+
+
+
